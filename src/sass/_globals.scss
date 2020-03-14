@@ -1,4 +1,9 @@
 
+html {
+    width: 100%;
+    height: 100%;
+}
+
 
 .App{
     position: relative;
@@ -19,6 +24,8 @@ body {
 
     }
     margin:0;
+    word-break: break-word;
+
     position: relative;
     display: flex;
     z-index:0;
@@ -122,29 +129,30 @@ span {
         margin-bottom: 2rem;
     
         h1{
-        font-family: $accent-font;
-        display: inline-flex;
-        font-size: 2.25rem;
-        padding-bottom: 15px;
-        margin-bottom:15px;
-        color: $yellow;
-        text-align: center;
-        justify-content: center;
-        width: 100%;
-        border-bottom: solid 1px $yellow;
+            font-family: $accent-font;
+            display: flex;
+            word-break:normal;
+            font-size: 1.5rem;
+            color: $yellow;
+            text-align: center;
+            justify-content: center;
+            width: 100%;
             span{
                 color: $white;
                 display: flex;
-                margin: 0 15px;
+                word-break:normal;
+                margin: 0 8px;
             }
         }
         p{
             font-family: $main-font;
+            border-top: solid 1px $yellow;
             font-style: oblique;
             font-weight: 300;
             color: $white;
             text-align: center;
             margin: 0;
+            padding-top: 1rem;
             color:$white;
         }
     }
