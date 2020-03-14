@@ -1,0 +1,243 @@
+
+
+.App{
+    position: relative;
+}
+
+
+body {
+    &:before{
+        content:'';
+        background-color: #8fd4fe;
+        position: absolute;
+        left:0;
+        right:0;
+        bottom:0;
+        top:0;
+        z-index: 1;
+        opacity: 0.8;
+
+    }
+    margin:0;
+    position: relative;
+    display: flex;
+    z-index:0;
+    &:after{
+        content:'';
+        position: absolute;
+        left:0;
+        right:0;
+        bottom:0;
+        top:0;
+        background-image: url('/unicorn_pattern-01.jpg');
+    }
+    
+}
+
+
+
+
+.modal-bg {
+    position: absolute;
+    display: flex;
+    z-index:5;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    &:before{
+        content:'';
+        position: absolute;
+        display: flex;
+        z-index:10;
+        left:0;
+        right:0;
+        top:0;
+        bottom:0;
+        background-color: $red;
+        opacity: 0.8;
+        
+        }
+    div.component--modal{
+        width: 60%;
+        display: flex;
+        max-height: 40vh;
+        top: 2rem;
+        flex-direction: column;
+        background-color: $white;
+        padding: 4rem 2rem;
+        font-family: $main-font;
+        position: relative;
+        z-index: 100;
+        margin: 0 auto;
+        text-align: center;
+        h2 {
+            width: 80%;
+            margin: 0 auto;
+        }
+        p{
+            width: 60%;
+            margin: 1rem auto;
+            color: #696969;
+            span {
+                font-weight: 700;
+            }
+            &.miceType {
+                font-style: oblique;
+                font-weight: 300;
+                font-size: 0.9rem;
+            }
+
+        }
+        button{
+            background-color: $gold;
+            display: flex;
+            padding: 1rem;
+            color: $white;
+            font-weight: 700;
+            text-align: center;
+            justify-content: center;
+            width: 40%;
+            margin: 0 auto;
+        }
+    }
+}
+
+span {
+    overflow-wrap: break-word;
+}
+
+
+.component--feed_index{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    position: relative;
+    z-index: 4;
+    header {
+        background-color: $red;
+        padding: 1rem;
+        width: 100%;
+        margin-bottom: 2rem;
+    
+        h1{
+        font-family: $accent-font;
+        display: inline-flex;
+        font-size: 2.25rem;
+        padding-bottom: 15px;
+        margin-bottom:15px;
+        color: $yellow;
+        text-align: center;
+        justify-content: center;
+        width: 100%;
+        border-bottom: solid 1px $yellow;
+            span{
+                color: $white;
+                display: flex;
+                margin: 0 15px;
+            }
+        }
+        p{
+            font-family: $main-font;
+            font-style: oblique;
+            font-weight: 300;
+            color: $white;
+            text-align: center;
+            margin: 0;
+            color:$white;
+        }
+    }
+
+    div.component--story:hover {
+        background-color: #666;
+        transition: all 1s linear;
+    }
+    div:nth-child(1n+1){
+        background-color: $pink;
+        transition: all 1s linear;
+    }
+    div:nth-child(2n+1){
+        background-color: $green;
+        transition: all 1s linear;
+    }
+    div:nth-child(3n+1){
+        background-color: $gold;
+        transition: all 1s linear;
+    }
+    div:nth-child(4n+1){
+        background-color: $red;
+        transition: all 1s linear;
+    }
+}
+
+
+
+.component--story, .component--gif{
+    width: 100%;
+    @media only screen and (min-width: 600px) {
+        width: 42%;
+    }
+    @media only screen and (min-width: 1100px) {
+        width: 27%;
+    }
+    padding: 1.25rem;
+    margin: 0.75rem;
+    img {
+        max-width: 100%
+    }
+    a{
+        text-decoration: none;
+        color: $white;
+        max-width: 100%;
+    }
+    
+
+    
+    h2{
+        font-weight: 400;
+        font-size: 2rem;
+        font-family: $accent-font;
+    }
+
+    span, p{
+        font-family: $main-font;
+        line-height: 1.5rem;
+    }
+
+    .story--url{
+        font-size: 0.75rem;
+        line-height: 1rem;
+    }
+    
+}
+
+.component--loader{
+    border-radius: 100%;
+    overflow: hidden;
+    position: absolute;
+    border: solid 24px $white;
+    margin: 0 auto;
+    left: 30vw;
+    top: 30vh;
+
+    h2{
+        font-family: $accent-font;
+        text-align: center;
+        color: $white;
+        
+    }
+    
+}
+
+footer {
+    width: 100%;
+    color: $white;
+    text-align: center;
+    font-family: $main-font;
+    a{
+        font-weight: 900;
+        text-decoration: none;
+        color: $red;
+    }
+}
