@@ -24,9 +24,7 @@ class FeedIndex extends React.Component{
     }
 
     componentDidMount(){
-        this.setState({
-            loading: false
-        });
+        
     }
 
 
@@ -89,7 +87,8 @@ class FeedIndex extends React.Component{
                         result.push(...totalStories.slice(l), ...gifArray.slice(l));
 
                         this.setState({
-                            allPosts: result
+                            allPosts: result,
+                            loading: false
                         });
                     })
                 }catch(err){
