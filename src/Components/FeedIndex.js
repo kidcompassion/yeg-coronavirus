@@ -35,10 +35,10 @@ class FeedIndex extends React.Component{
         await parser.parseURL(CORS_PROXY + 'https://www.google.ca/alerts/feeds/05625930400153980475/6925218829248990220')
             .then((feed)=>{ 
                 totalStories = [...feed.items];
-                const chinchillaGifs = `http://api.giphy.com/v1/gifs/search?q=chinchilla&api_key=${keys.giphy}&type=random&limit=5`;
-                const puppyZoomieGifs = `http://api.giphy.com/v1/gifs/search?q=puppy+zoomies&api_key=${keys.giphy}&type=random&limit=5`;
-                const dogBathGifs = `http://api.giphy.com/v1/gifs/search?q=puppy+bath&api_key=${keys.giphy}&type=random&limit=5`;
-                const derpGifs = `http://api.giphy.com/v1/gifs/search?q=mochimochi&api_key=${keys.giphy}&type=random&limit=5`;
+                const chinchillaGifs = `https://api.giphy.com/v1/gifs/search?q=chinchilla&api_key=${keys.giphy}&type=random&limit=5`;
+                const puppyZoomieGifs = `https://api.giphy.com/v1/gifs/search?q=puppy+zoomies&api_key=${keys.giphy}&type=random&limit=5`;
+                const dogBathGifs = `https://api.giphy.com/v1/gifs/search?q=puppy+bath&api_key=${keys.giphy}&type=random&limit=5`;
+                const derpGifs = `https://api.giphy.com/v1/gifs/search?q=mochimochi&api_key=${keys.giphy}&type=random&limit=5`;
                  try{
                     Promise.all([
                         fetch(chinchillaGifs).then(value=>value.json()),
