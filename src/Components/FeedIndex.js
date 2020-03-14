@@ -64,7 +64,7 @@ class FeedIndex extends React.Component{
                 const chinchillaGifs = `https://api.giphy.com/v1/gifs/search?q=chinchilla&api_key=${keys.giphy}&type=random&limit=25`;
                 const puppyZoomieGifs = `https://api.giphy.com/v1/gifs/search?q=puppy+zoomies&api_key=${keys.giphy}&type=random&limit=25`;
                 const dogBathGifs = `https://api.giphy.com/v1/gifs/search?q=puppy+bath&api_key=${keys.giphy}&type=random&limit=25`;
-                const catGifs = `https://api.giphy.com/v1/gifs/search?q=funny+cats&api_key=${keys.giphy}&type=random&limit=5`;
+                const catGifs = `https://api.giphy.com/v1/gifs/search?q=funny+cats&api_key=${keys.giphy}&type=random&limit=25`;
                  try{
                     Promise.all([
                         fetch(chinchillaGifs).then(value=>value.json()),
@@ -80,7 +80,6 @@ class FeedIndex extends React.Component{
                         let gifArray = this.shuffleArray(allGifs);
                         gifArray = gifArray.slice(0,19);
 
-                        console.log(gifArray);
                         let result = [],
                         i, l = Math.min(totalStories.length, gifArray.length);
                             
