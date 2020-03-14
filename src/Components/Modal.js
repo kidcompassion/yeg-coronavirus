@@ -28,7 +28,7 @@ class Modal extends React.Component{
         return(
             <div className="modal-bg" onClick={this.handleClick}>
                 <div className="component--modal">
-                    <h2>Are you freaking yourself by constantly checking the latest coronavirus headlines? </h2>
+                    <h2>Are you freaking yourself out by constantly checking the latest coronavirus headlines? </h2>
                     <p>Good news! You've found an application <span>scientifically designed*</span> to make coronavirus news updates seem less scary.</p>
                     <p className="miceType">*Not scientifically designed.</p>
                     <button id="proceed">See the latest headlines</button>
