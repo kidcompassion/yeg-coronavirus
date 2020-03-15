@@ -1,4 +1,8 @@
+# YEG Coronavirus Google Alerts
+
 This is a React SPA that retrieves gifs from giphy and info from a Google Alerts feed and combines it into a UI that is intended to reduce the gravitas of all the Coronavirus updates, so people can follow them without feeling as anxious.
+
+<img src="./thumb.png"/>
 
 ## To prepare
 
